@@ -5,8 +5,9 @@ import Init from './scenes/Init';
 const config = {
     type: Phaser.AUTO,
     scale: {
+        plugins: [ 'AnimatedTilesd' ],
         mode: Phaser.Scale.FIT,
-        parent: 'phaser-example',
+        // parent: 'phaser-example',
         autoCenter: Phaser.Scale.CENTER_BOTH,
         width: SCREEN_TILES_WIDTH*TILE_SIZE,
         height: SCREEN_TILES_HEIGHT*TILE_SIZE
