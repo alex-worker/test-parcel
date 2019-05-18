@@ -6,10 +6,14 @@
   "author": "alex-worker <43813540+alex-worker@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "parcel": "^1.12.3",
     "phaser": "^3.17.0"
   },
   "scripts": {
-    "dev": "yarn parcel client/index.html"
+    "dev": "yarn parcel client/index.html",
+    "build": "yarn parcel build client/index.js"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.3",
+    "parcel-plugin-asset-copier": "^1.0.0"
   }
 }
