@@ -1,0 +1,15 @@
+{
+  "name": "test-parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alex-worker/test-parcel.git",
+  "author": "alex-worker <43813540+alex-worker@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "parcel": "^1.12.3",
+    "phaser": "^3.17.0"
+  },
+  "scripts": {
+    "dev": "yarn parcel client/index.html"
+  }
+}
