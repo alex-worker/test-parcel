@@ -1,19 +1,17 @@
-import Phaser, { Game } from 'phaser';
-import { WIDTH, HEIGHT } from './config';
+import Phaser, {Game} from 'phaser';
+import { TILE_SIZE, SCREEN_TILES_WIDTH, SCREEN_TILES_HEIGHT } from './config';
 import Init from './scenes/Init';
 
 const config = {
     type: Phaser.AUTO,
-    width: WIDTH,
-    height: HEIGHT,
-    physics: {
-        default: 'arcade',
-        arcade: {
-            gravity: { y: 0 },
-            debug: false,
-        },
+    scale: {
+        mode: Phaser.Scale.FIT,
+        parent: 'phaser-example',
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        width: SCREEN_TILES_WIDTH*TILE_SIZE,
+        height: SCREEN_TILES_HEIGHT*TILE_SIZE
     },
-    // scene: [Init, Town, House_1, House_2],
+    pixelArt: true,
     scene: [Init],
 }
 
