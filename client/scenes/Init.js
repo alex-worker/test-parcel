@@ -1,12 +1,12 @@
-import { Scene } from 'phaser';
+import { Scene } from 'phaser'
 
 class Init extends Scene {
   
     constructor() {
-        super({ key: 'Init' });
-        this.progressBar = null;
-        this.progressCompleteRect = null;
-        this.progressRect = null;
+        super({ key: 'Init' })
+        this.progressBar = null
+        this.progressCompleteRect = null
+        this.progressRect = null
     }
 
     preload() {
@@ -28,7 +28,7 @@ class Init extends Scene {
             [  66,  966,  966,  966,  966,  966,  966,  966,  966,  96 ],
             [  66,  966,  966,  966,  966,  966,  966,  966,  966,  96 ],
             [  66,  966,  966,  966,  966,  966,  966,  966,  966,  96 ]
-          ];
+          ]
         
           const wall = [
             [  66,  966,  966,  966,  966,  966,  966,  966,  966,  96 ],
@@ -42,7 +42,7 @@ class Init extends Scene {
             [  66,  966,  966,  966,  966,  966,  966,  966,  966,  96 ],
             [  66,  966,  966,  966,  966,  966,  966,  966,  966,  96 ],
             [  66,  966,  966,  966,  966,  966,  966,  966,  966,  96 ]
-          ];
+          ]
 
 
           const top = [
@@ -57,14 +57,18 @@ class Init extends Scene {
             [  66,  966,  966,  966,  966,  966,  966,  966,  966,  96 ],
             [  66,  966,  966,  966,  966,  966,  966,  966,  966,  96 ],
             [  66,  966,  966,  966,  966,  966,  966,  966,  966,  96 ]
-          ];
+          ]
 
-          const map = this.make.tilemap({ tileWidth: 32, tileHeight: 32, width: 10, height: 10 });
-          const tileset = map.addTilesetImage("tileset");
+          const map = this.make.tilemap({ tileWidth: 32, tileHeight: 32, width: 10, height: 10 })
+          const tileset = map.addTilesetImage("tileset")
           
-          const topLayer = map.createBlankDynamicLayer("Ground", tileset, 0, 0);
-          const wallLayer = map.createBlankDynamicLayer("Wall", tileset, 0, 0);
-          const gtoundLayer = map.createBlankDynamicLayer("Top", tileset, 0, 0);
+          const groundLayer = map.createBlankDynamicLayer("Ground", tileset, 0, 0)
+          const wallLayer = map.createBlankDynamicLayer("Wall", tileset, 0, 0)
+          const topLayer = map.createBlankDynamicLayer("Top", tileset, 0, 0)
+
+          groundLayer.fill(257)
+          wallLayer.fill(69)
+          topLayer.fill(1)
 
     }
 
