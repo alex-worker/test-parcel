@@ -11,8 +11,8 @@
     "phaser-animated-tiles": "^2.0.2"
   },
   "scripts": {
-    "dev": "yarn parcel client/index.html",
-    "build": "yarn parcel build client/index.js"
+    "dev": "yarn parcel client/index.html --open",
+    "build": "yarn parcel build client/index.html"
   },
   "devDependencies": {
     "parcel": "^1.12.3",

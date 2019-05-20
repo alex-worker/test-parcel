@@ -68,7 +68,7 @@ class Init extends Scene {
 
           groundLayer.fill(257)
           wallLayer.fill(69)
-          topLayer.fill(1)
+          topLayer.fill(2692)
 
     }
 
