@@ -17,3 +17,5 @@ const config = {
 }
 
 const game = new Game(config)
+
+console.log('lol')
